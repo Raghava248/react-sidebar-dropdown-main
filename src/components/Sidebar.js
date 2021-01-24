@@ -35,10 +35,25 @@ const SidebarNav = styled.nav`
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
   transition: 350ms;
   z-index: 10;
+  overflow: scroll;
+  
 `;
 
 const SidebarWrap = styled.div`
   width: 100%;
+`;
+
+const Menu = styled.li`
+  color: white;
+  display: flex;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: 10px;
+  list-style-type:none;
+  
+  justify-content: space-between;
+  flex: 0.2;
+  
 `;
 
 const Sidebar = () => {
@@ -53,8 +68,13 @@ const Sidebar = () => {
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
-          
-     
+          <Menu>
+            <li>
+              <Link to="/cart"> Cart</Link>
+              
+            </li>
+            <input type="text" placeholder="Search.."></input>
+          </Menu>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

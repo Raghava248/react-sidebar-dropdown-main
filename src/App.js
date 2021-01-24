@@ -4,14 +4,17 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Overview from './pages/Overview';
 import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './pages/Reports';
 import Team from './pages/Team';
+import Cart from './pages/Cart';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { NavigationBar } from './components/NavigationBar';
 
 function App() {
   return (
     <Router>
-      
+     
       <Sidebar />
+     
+     
       <Switch>
         <Route path='/overview' exact component={Overview} />
         <Route path='/reports' exact component={Reports} />
@@ -19,6 +22,8 @@ function App() {
         <Route path='/reports/reports2' exact component={ReportsTwo} />
         <Route path='/reports/reports3' exact component={ReportsThree} />
         <Route path='/team' exact component={Team} />
+        <Route path='/cart' exact component={ Cart } />
+        
       </Switch>
     </Router>
   );
