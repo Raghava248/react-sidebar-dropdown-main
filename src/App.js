@@ -7,13 +7,16 @@ import Team from './pages/Team';
 import Cart from './pages/Cart';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { NavigationBar } from './components/NavigationBar';
+import Cards from "./components/Cards";
 
 function App() {
   return (
     <Router>
      
       <Sidebar />
-     
+      <div className = "container">
+        <Cards/>
+      </div>
      
       <Switch>
         <Route path='/overview' exact component={Overview} />
