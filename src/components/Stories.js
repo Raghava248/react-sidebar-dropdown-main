@@ -14,16 +14,7 @@ function Stories(){
             <Story/>
             <Story/>
             <Story/>
-            <Story/>
-            <Story/>
-            <Story/>
-            <Story/>
-            <Story/>
-            <Story/>
-            <Story/>
-            <Story/>
-            <Story/>
-            <Story/>
+         
             
         </HorizontalScroll>
     </div>
